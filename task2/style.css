@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 4000px;
+}
+
+.container {
+  padding: 0 100px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  transition: all 0.5s ease;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+nav .navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+nav .navbar span {
+  font-size: 30px;
+}
+nav .navbar .list {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .navbar .menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-list {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  transition: all 1s ease;
+  top: -200px;
+  left: 0;
+  transform: translateY(0%);
+  background-color: white;
+}
+.menu-list p {
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+#banner {
+  background-color: aquamarine;
+}
+#banner .banner {
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#banner .banner h1 {
+  font-size: 25px;
+  max-width: 400px;
+  text-align: center;
+  font-weight: 900;
+}
+#banner .banner p {
+  font-size: 15px;
+  max-width: 700px;
+  text-align: center;
+}
+#banner .banner a {
+  color: white;
+  background-color: green;
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+#what .what {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 100px 0;
+  align-items: center;
+}
+#what .what .header {
+  text-align: center;
+}
+#what .what .header h2 {
+  margin-bottom: 10px;
+}
+#what .what .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#what .what .main .blok {
+  max-width: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+#what .what .main .blok p {
+  color: grey;
+}
+#what .what .main .blok:hover {
+  background-color: black;
+  color: rgb(251, 255, 233);
+}
+#what .what .main .blok:hover p {
+  color: rgb(253, 255, 242);
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 0 40px;
+  }
+  nav .navbar .list {
+    display: none;
+  }
+  nav .navbar .menu {
+    display: block;
+  }
+  #banner .banner h1 {
+    font-size: 20px;
+  }
+  #banner .banner p {
+    padding: 0 30px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #what .what .main {
+    flex-direction: column;
+    width: 100%;
+  }
+  #what .what .main .blok {
+    max-width: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */

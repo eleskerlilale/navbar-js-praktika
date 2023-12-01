@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  background-color: grey;
+}
+nav .navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+nav .navbar a {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav .navbar .list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+nav .navbar .list li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+nav .navbar .list li:hover {
+  color: blue;
+}
+nav .navbar .menu {
+  display: none;
+}
+
+.menu-list {
+  height: 100%;
+  transition: all 1s ease;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+  transform: translateX(100%);
+  opacity: 0;
+}
+.menu-list .close {
+  padding: 10PX 30PX;
+  font-size: 25px;
+}
+.menu-list p {
+  width: 100%;
+  padding: 10px 30px;
+}
+
+#grid .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+#grid .grid > div img {
+  width: 100%;
+  height: 100%;
+}
+#grid .grid .image3 {
+  grid-area: 1/2/3/3;
+}
+#grid .grid .image2 {
+  grid-area: 2/1/3/2;
+}
+
+@media screen and (max-width: 768px) {
+  nav .navbar .list {
+    display: none;
+  }
+  nav .navbar .menu {
+    display: block;
+    color: black;
+    font-size: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
